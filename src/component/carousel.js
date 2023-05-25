@@ -9,7 +9,7 @@ function AvatarList() {
   const handleScroll = (scrollOffset) => {
     const list = document.querySelector('.avatar-list');
     const distanceToScroll = Math.abs(scrollOffset);
-    const step = Math.sign(scrollOffset) * 50;
+    const step = Math.sign(scrollOffset) * 40;
     let remainingDistance = distanceToScroll;
     const timerId = setInterval(() => {
       if (remainingDistance < step) {

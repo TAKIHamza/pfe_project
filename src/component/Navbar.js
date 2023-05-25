@@ -5,7 +5,7 @@ export default function NavBarr() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="border-b backdrop-blur top-0 bg-white/90 dark:bg-gray-900/70 dark:border-gray-700 xl:fixed xl:w-full xl:top-0 xl:left-0 xl:z-30 relative">
+        <nav className=" w-full border-b backdrop-blur top-0 bg-white/90 dark:bg-gray-900/70 dark:border-gray-700 xl:fixed xl:w-full xl:top-0 xl:left-0 xl:z-30 relative">
         <div className="container mx-auto  w-full bg-white-100   ">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
@@ -59,12 +59,13 @@ export default function NavBarr() {
 
                         <ul class=" lg:pt-0 gap-8 tracking-wide font-medium flex-col flex md:flex-row md:gap-0">
                                 <li class="max-w-max">
-                                    <Link to="/" class="block md:px-3">
-                                        <div
-                                            class="relative text-cyan-800 dark:text-white
-                                                    before:absolute before:-bottom-2 md:before:-bottom-4 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400">
-                                            <span>Home</span>
+                                    <Link to="/" class="block  md:px-3 group">
+                                    <div
+                                            class="relative text-gray-600 dark:text-gray-300
+                                                    before:absolute before:-bottom-2 md:before:-bottom-4 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                                            <span class="transition group-hover:text-cyan-700 dark:group-hover:text-cyan-400">Home</span>
                                         </div>
+                            
                                     </Link>
                                 </li>
                                 <li class="max-w-max">
